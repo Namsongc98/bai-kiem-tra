@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = "program";
+      let program = arr.split("");
+      let first = 0;
+      let last = program.length - 1;
+      while (first < last) {
+        let a = program[first];
+        program[first] = program[last];
+        program[last] = a;
+        first++;
+        last--;
+      }
+      document.write("program đảo ngược thành = "+ program + "<br>");
+
+      let arrData = "data";
+      let data = arrData.split("");
+      let firstData = 0;
+      let lastData = data.length - 1;
+      
+      while (firstData < lastData) {
+        let a = data[firstData];
+        data[firstData] = data[lastData];
+        data[lastData] = a;
+        firstData++;
+        lastData--;
+      }
+      document.write("data đảo ngược thành = "+ data);
+    </script>
+  </body>
+</html>
